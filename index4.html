@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Eventify- Event And Conference Theme</title>
+
+		<!--=====FAB ICON=======-->
+		<link rel="shortcut icon" href="assets/img/logo/fav-logo2.png" />
+
+		<!--===== CSS LINK =======-->
+		<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/vendor/aos.css" />
+		<link rel="stylesheet" href="assets/css/vendor/fontawesome.css" />
+		<link rel="stylesheet" href="assets/css/vendor/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/css/vendor/mobile.css" />
+		<link rel="stylesheet" href="assets/css/vendor/owlcarousel.min.css" />
+		<link rel="stylesheet" href="assets/css/vendor/sidebar.css" />
+		<link rel="stylesheet" href="assets/css/vendor/slick-slider.css" />
+		<link rel="stylesheet" href="assets/css/vendor/nice-select.css" />
+		<link rel="stylesheet" href="assets/css/vendor/odometer.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!--=====  JS SCRIPT LINK =======-->
+		<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+		<style>
+	.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 40px;
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-box {
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-box i {
+  font-size: 32px;
+  color: #00b3b3;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.service-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+}
+
+
+		.services-section {
+  background-image: url('your-image.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  position: relative;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  display: inline-block;
+  padding: 30px 50px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  color: #222;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+}
+
+
+        .top-banner {
+            background: linear-gradient(45deg, #ff5733, #ffcc33);
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffcc33;
+        }
+
+        .comparison-container {
+            max-width: 90%;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px; /* Increased gap */
+        }
+
+        .card {
+            width: calc(25% - 70px); /* Adjusted width to accommodate more gap */
+            height: 200px;
+            perspective: 1000px;
+            margin-bottom: 40px; /* Increased gap */
+            background-color: #ffffff; /* Set the color to pure white */
+            color: black;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            border-radius: 15px;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background:  #ffffff;
+            backdrop-filter: blur(15px);
+            
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        .vs {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc33;
+            margin: 20px 0;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #f00a0a;
+        }
+
+        @media (max-width: 1024px) {
+            .card {
+                width: calc(50% - 40px); /* Adjusted width for tablets */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(100% - 40px); /* Adjusted width for mobile devices */
+            }
+        }
+		.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Adjust based on your layout */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100vh; /* Make sure it fills the screen height */
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+ object-fit: cover;  /* Ensures the image covers the container */
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+.comparison-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+		  .slide-content h1 {
+			font-size: 3rem;
+			margin-bottom: 0.5rem;
+		  }
+	  
+		  .slide-content h2 {
+			font-size: 2rem;
+			margin-bottom: 0.5rem;
+		  }
+	  
+		  .slide-content p {
+			font-size: 1.2rem;
+		  }
+	  
+		  .arrow {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 2rem;
+			background: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			padding: 10px 15px;
+			cursor: pointer;
+			z-index: 3;
+		  }
+	  
+		  .arrow.left {
+			left: 20px;
+		  }
+	  
+		  .arrow.right {
+			right: 20px;
+		  }
+	  
+		  @media (max-width: 768px) {
+			.slide-content h1 {
+			  font-size: 2rem;
+			}
+			.slide-content h2 {
+			  font-size: 1.5rem;
+			}
+			.slide-content p {
+			  font-size: 1rem;
+			}
+		  }
+		  
+		</style>
+	</head>
+	<body class="homepage4-body">
+
+
+		<!--===== PAGE PROGRESS START=======-->
+		<div class="paginacontainer">
+			<div class="progress-wrap">
+				<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+					<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+				</svg>
+			</div>
+		</div>
+		<!--===== PAGE PROGRESS END=======-->
+
+		<!--=====HEADER START=======-->
+		<header>
+			
+			
+			<div class="header-area homepage4 header header-sticky d-none d-lg-block" id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="header-elements">
+								<div class="site-logo">
+									<a href="index.html"><img src="assets/img/logo/logo.png" alt="" ></a>
+								</div>
+								<div class="main-menu">
+									<ul>
+										<li>
+											<a href="index4.html">Home </a>
+											
+										</li>
+										<li><a href="about.html">About</a></li>
+										<li>
+											<a href="gallery.html">Gallery</a></li>
+										
+										</li>
+										<li>
+											<a href="#">Service <i class="fa-solid fa-angle-down"></i></a>
+						<ul class="dropdown-padding">
+							<li><a href="wedding1.html">Wedding Planning</a></li>
+							<li><a href="corporate.html">Corporate Event Planning</a></li>
+							<li><a href="destination.html">Destination Weddings</a></li>
+							<li><a href="prewedding.html">Pre-Wedding Functions</a></li>
+							<li><a href="brithday.html">Birthday Parties</a></li>
+							<li><a href="Annualday.html">Corporate Annual day Events</a></li>
+							<li><a href="team building.html">Team Building Activities</a></li>
+						</ul>
+										</li>
+										
+										<li>
+											<a href="contact.html">Contact</i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-area">
+									
+									<ul>
+										<li>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#" class="m-0"><i class="fa-brands fa-pinterest-p"></i></a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="header-search-form-wrapper">
+									<div class="tx-search-close tx-close"><i class="fa-solid fa-xmark"></i></div>
+									<div class="header-search-container">
+										<form role="search" class="search-form">
+											<input type="search" class="search-field" placeholder="Search …" value="" name="s" />
+											<button type="submit" class="search-submit"><img src="assets/img/icons/search1.svg" alt="" /></button>
+										</form>
+									</div>
+								</div>
+								<div class="body-overlay"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--=====HEADER END =======-->
+
+		<!--===== MOBILE HEADER STARTS =======-->
+		<div class="mobile-header mobile-haeder4 d-block d-lg-none">
+			<div class="container-fluid">
+				<div class="col-12">
+					<div class="mobile-header-elements">
+						<div class="mobile-logo">
+							<a href="index.html"><img src="assets/img/logo/logo3.png" alt="" /></a>
+						</div>
+						<div class="mobile-nav-icon dots-menu">
+							<i class="fa-solid fa-bars-staggered"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mobile-sidebar mobile-sidebar4">
+			<div class="logosicon-area">
+				<div class="logos">
+					<img src="assets/img/logo/logo3.png" alt="" />
+				</div>
+				<div class="menu-close">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+			<div class="mobile-nav mobile-nav1">
+				<ul class="mobile-nav-list nav-list1">
+					<li>
+						<a href="#">Home </a>
+						
+					</li>
+					<li><a href="about.html">About</a></li>
+					<li>
+						<a href="speakers.html">Gallery</a>
+					
+					</li>
+					<li>
+						<a href="#">Service <i class="fa-solid fa-angle-down"></i></a>
+						<ul class="dropdown-padding">
+							<li><a href="wedding.html">Wedding Planning</a></li>
+							<li><a href="corporate.html">Corporate Event Planning</a></li>
+							<li><a href="destination.html">Destination Weddings</a></li>
+							<li><a href="prewedding.html">Pre-Wedding Functions</a></li>
+							<li><a href="brithday.html">Birthday Parties</a></li>
+							<li><a href="corporate.html">Corporate Annual day Events</a></li>
+							<li><a href="team building.html">Team Building Activities</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="contact.html">Contact</i></a>
+					</li>
+					
+				</ul>
+				<div class="allmobilesection">
+					<a class="vl-btn4" href="contact"><span class="demo">Contact Us</span></a>
+					<div class="single-footer">
+						<h3>Contact Info</h3>
+						<div class="footer1-contact-info">
+							<div class="contact-info-single">
+								<div class="contact-info-icon">
+									<span><i class="fa-solid fa-phone-volume"></i></span>
+								</div>
+								<div class="contact-info-text">
+									<a href="tel:+919945596817">+919945596817</a>
+								</div>
+							</div>
+							<div class="contact-info-single">
+								<div class="contact-info-icon">
+									<span><i class="fa-solid fa-envelope"></i></span>
+								</div>
+								<div class="contact-info-text">
+									<a href="mailto:info@ascentevents.in">info@ascentevents.in</a>
+								</div>
+							</div>
+							<div class="single-footer">
+								<h3>Our Location</h3>
+								<div class="contact-info-single">
+									<div class="contact-info-icon">
+										<span><i class="fa-solid fa-location-dot"></i></span>
+									</div>
+									<div class="contact-info-text">
+										<a href="mailto:info@ascentevents.in"
+											>No 675, Sir M Vishweshwaraiah layout, 8th block furtherc, extension Dr G P Rajarathnam Road, Bengaluru-560091</a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="single-footer">
+								<h3>Social Links</h3>
+								<div class="social-links-mobile-menu">
+									<ul>
+										<li>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-youtube"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===== MOBILE HEADER STARTS =======-->
+
+		<!--===== HERO AREA STARTS =======-->
+		
+		<div class="slider-wrapper">
+			<div class="slider" id="slider">
+			  <!-- Slide 1 -->
+			  <div class="slide">
+				<img src="assets/img/bg/events-in-bangalore2.png" alt="Image 2">
+				<div class="slide-content">
+				  <h1>Corporate Event Planning</h1>
+				  <h2>We are, The Event Planners In Bangalore</h2>
+				  <p>Elevate Every Event with Ascent Events</p>
+				</div>
+			  </div>
+			
+			  <!-- Slide 2 -->
+			  <div class="slide">
+				<img src="assets/img/bg/corporate events in bangalore.jpg" alt="Image 2">
+				<div class="slide-content">
+				  <h1>Corporate Event Planning</h1>
+				  <h2>We are, The Event Planners In Bangalore</h2>
+				  <p>Elevate Every Event with Ascent Events</p>
+				</div>
+			  </div>
+			  <div class="slide">
+				<img src="assets/img/bg/team1.jpg" alt="Image 2">
+				<div class="slide-content">
+				  <h1>Team Building activities</h1>
+				  <h2>We are, The Event Planners In Bangalore</h2>
+				  <p>Elevate Every Event with Ascent Events</p>
+				</div>
+			  </div>
+			</div>
+		
+			<!-- Navigation Arrows -->
+			<button class="arrow left" onclick="prevSlide()">&#10094;</button>
+			<button class="arrow right" onclick="nextSlide()">&#10095;</button>
+		  </div>
+		
+		 
+		
+		
+
+	
+		
+	
+		<!--===== HERO AREA ENDS =======-->
+	
+		<!--===== ABOUT AREA STARTS =======-->
+		<div class="about4-section-area sp1">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<div class="about-images">
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<div class="img1 image-anime reveal">
+										<img src="assets/img/bg/stall event in bangalore .jpg" alt="" />
+									</div>
+									<div class="space30"></div>
+									<div class="content-box">
+										<p>Upcoming Event 2025</p>
+										<div class="space12"></div>
+										<h6>Wedding</h6>
+										<div class="space6"></div>
+										<ul>
+											<li>
+												<a href="#"><img src="assets/img/icons/clock1.svg" alt="" />10.00 AM -12.00 PM</a>
+											</li>
+											<li>
+												<a href="#"><img src="assets/img/icons/location1.svg" alt="" />Bangalore</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6">
+									<div class="space44"></div>
+									<div class="img1 image-anime reveal">
+										<img src="assets/img/bg/stall event 1 in bangalore .jpg" alt="" />
+									</div>
+									<div class="space30"></div>
+									<div class="img1 image-anime reveal">
+										<img src="assets/img/bg/stage event 1 in bangalore .jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="about4-heading heading6">
+							<h5 data-aos="fade-left" data-aos-duration="800">About Ascent Events</h5>
+							<div class="space18"></div>
+							<h2 class="text-anime-style-3">At Ascent Events, we bring your celebrations to life</h2>
+							<div class="space16"></div>
+							<p data-aos="fade-left" data-aos-duration="900">Memorable experiences through creative event planning and management. Ascent events makes sure that every occasion you plan with us is momentous. We turn all your events into lasting memories</p>
+							<div class="space10"></div>
+							<ul data-aos="fade-left" data-aos-duration="1000">
+								<li><img src="assets/img/icons/check1.svg" alt="" />Why Ascents</li>
+								<li><img src="assets/img/icons/check1.svg" alt=""  />Objective</li>
+								<li><img src="assets/img/icons/check1.svg" alt="" />Mission</li>
+		
+							</ul>
+							<div class="space32"></div>
+							<div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
+								<a href="event-schedule" class="vl-btn4">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===== ABOUT AREA ENDS =======-->
+		<!-- <section class="services-section">
+			<div class="overlay">
+			  <h1>OUR SERVICES</h1>
+			  <p>Crafting memorable moments with our expert services</p>
+			</div>
+		  </section> -->
+		  
+		<h2 class="comparison-heading">OUR SERVICES</h2>
+		<section class="services-grid">
+			<div class="service-box">
+			  <i class="fa-solid fa-briefcase"></i>
+			  <h3>Corporate Affair</h3>
+			  <p>We handle corporate events with professionalism and excellence.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-solid fa-layer-group"></i>
+			  <h3>Exhibitions</h3>
+			  <p>Organizing world-class exhibitions for businesses and industries.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-regular fa-user"></i>
+			  <h3>Artist Management</h3>
+			  <p>Managing artists and performances for stunning events.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-solid fa-mobile-screen-button"></i>
+			  <h3>Interactive Media</h3>
+			  <p>Engaging digital media experiences for your events.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-regular fa-lightbulb"></i>
+			  <h3>Advertising & Branding</h3>
+			  <p>Strategic advertising and branding solutions for impact.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-solid fa-star"></i>
+			  <h3>Celebrity Management</h3>
+			  <p>Seamless handling of celebrity appearances and promotions.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-solid fa-wand-magic-sparkles"></i>
+			  <h3>Customized Evenings</h3>
+			  <p>Tailor-made event experiences for special occasions.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-solid fa-microphone-lines"></i>
+			  <h3>Live Public Events</h3>
+			  <p>Hosting grand live events with precision and energy.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-solid fa-bolt"></i>
+			  <h3>Live Wire</h3>
+			  <p>High-quality sound, lighting, and stage setups.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-regular fa-gem"></i>
+			  <h3>Decoration</h3>
+			  <p>Stunning event decorations to create memorable experiences.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-solid fa-border-all"></i>
+			  <h3>Stall Fabrication</h3>
+			  <p>Custom stall fabrication solutions for exhibitions and fairs.</p>
+			</div>
+			<div class="service-box">
+			  <i class="fa-regular fa-star"></i>
+			  <h3>Theme Party</h3>
+			  <p>Bringing your theme party vision to life with creativity.</p>
+			</div>
+		  </section>
+		  
+  
+		<!--===== EVENT AREA STARTS =======-->
+		<div class="event4-section-area sp1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="event-images-area" data-aos="zoom-in" data-aos-duration="1000">
+							<div class="img1">
+								<img src="assets/img/all-images/event/event-img7.png" alt="" />
+							</div>
+							<div class="content-area heading7">
+								<h5>FAQ's</h5>
+								<div class="space18"></div>
+								<h2>Top Questions from Our Clients</h2>
+								<div class="space32"></div>
+								
+							</div>
+						</div>
+					</div>
+
+					
+
+					<div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200">
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												
+												<span class="accor-btn">What kind of events does Ascent Events specialize in?</span>
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>We specialize in a wide range of events, including corporate affairs, exhibitions, live public events, theme parties, customized evenings, and more. Whether it's a formal business gathering or a creative celebration, we have the expertise to bring your vision to life.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												
+												<span class="accor-btn">Do you provide artist and celebrity management services?</span>
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Yes, we offer complete artist and celebrity management, including booking, scheduling, coordination, and on-ground support. From musicians and performers to high-profile celebrities, we ensure seamless experiences.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												
+												<span class="accor-btn">Can Ascent Events help with advertising and branding for our event?</span>
+											</button>
+										</h2>
+										<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Absolutely. We provide strategic advertising and branding services tailored to your event goals, including digital media, signage, branded merchandise, and more.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												
+												<span class="accor-btn">Do you create custom themes and decorations?</span>
+											</button>
+										</h2>
+										<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Yes. We excel at transforming spaces with stunning theme-based decor and customized setups. From elegant corporate styling to fun and quirky theme parties, we ensure every detail reflects your vision.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===== EVENT AREA ENDS =======-->
+
+		<!--===== MEMORY AREA STARTS =======-->
+		<div class="memory4-section-area sp1">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<div class="memory4-header heading6 space-margin60">
+							<!-- <h5> memory</h5> -->
+							<div class="space18"></div>
+							<h2 class="text-anime-style-3">STRIKING RECORD</h2>
+						</div>
+					</div>
+					<div class="col-lg-3"></div>
+					<div class="col-lg-3">
+						<div class="btn-area1">
+							<a href="memories" class="vl-btn4">See Recent Photos</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="memory-team-slider2 owl-carousel">
+							<div class="memory3-boxarea">
+								<div class="img1">
+									<img src="assets/img/all-images/memory/A1.jpg" alt="" />
+								</div>
+								<div class="content-area">
+									<!-- <p>Event 2024</p> -->
+									<div class="space12"></div>
+									<a href="memories">Pre-Wedding Functions</a>
+									<div class="plus">
+										<a href="memories"><i class="fa-solid fa-plus"></i></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="memory3-boxarea">
+								<div class="img1">
+									<img src="assets/img/bg/01.jpg" alt="" />
+								</div>
+								<div class="content-area">
+									<!-- <p>Event 2024</p> -->
+									<div class="space12"></div>
+									<a href="memories">Corporate Event Planning</a>
+									<div class="plus">
+										<a href="memories"><i class="fa-solid fa-plus"></i></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="memory3-boxarea">
+								<div class="img1">
+									<img src="assets/img/all-images/memory/A3.jpg" alt="" />
+								</div>
+								<div class="content-area">
+									<!-- <p>Event 2024</p> -->
+									<div class="space12"></div>
+									<a href="memories">Birthday Parties</a>
+									<div class="plus">
+										<a href="memories"><i class="fa-solid fa-plus"></i></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="memory3-boxarea">
+								<div class="img1">
+									<img src="assets/img/all-images/memory/memory-img1.png" alt="" />
+								</div>
+								<div class="content-area">
+									<!-- <p>Event 2024</p> -->
+									<div class="space12"></div>
+									<a href="memories">Wedding Planning</a>
+									<div class="plus">
+										<a href="memories"><i class="fa-solid fa-plus"></i></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="memory3-boxarea">
+								<div class="img1">
+									<img src="assets/img/bg/03.jpg" alt="" />
+								</div>
+								<div class="content-area">
+									<!-- <p>Event 2024</p> -->
+									<div class="space12"></div>
+									<a href="memories">corporate Annuel day Events</a>
+									<div class="plus">
+										<a href="memories"><i class="fa-solid fa-plus"></i></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="memory3-boxarea">
+								<div class="img1">
+									<img src="assets/img/all-images/memory/memory-img3.png" alt="" />
+								</div>
+								<div class="content-area">
+								<div class="space12"></div>
+									<a href="memories">Team Building activities</a>
+									<div class="plus">
+										<a href="memories"><i class="fa-solid fa-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===== MEMORY AREA ENDS =======-->
+
+		<!--===== TESTIMONIAL AREA STARTS =======-->
+		<div class="testimonial4-section-area sp1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 m-auto">
+						<div class="testimonial4-header heading6 text-center space-margin60">
+							<h5 data-aos="fade-left" data-aos-duration="800">testimonial</h5>
+							<div class="space18"></div>
+							<h2 class="text-anime-style-3">Feedback from Innovate 2024</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 m-auto">
+						<div class="testimonial-review-slider owl-carousel">
+							<div class="testimonial4-content">
+								<ul>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+								</ul>
+								<div class="space20"></div>
+								<p class="main">“The networking opportunities were equally transformative, allowing me to connect with like-minded professionals who share a passion for innovation and growth. Overall, Innovate 2024 has reinvigorated approach to business & opened doors to new.”</p>
+								<div class="space32"></div>
+								<div class="name-area">
+									<div class="img1">
+										<img src="assets/img/all-images/testimonials/testimonial-img1.png" alt="" />
+									</div>
+									<div class="text">
+										<a href="speakers">Tristian Stubbs</a>
+										<div class="space6"></div>
+										<p>Founder, Payhawk</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="testimonial4-content">
+								<ul>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+								</ul>
+								<div class="space20"></div>
+								<p class="main">“The networking opportunities were equally transformative, allowing me to connect with like-minded professionals who share a passion for innovation and growth. Overall, Innovate 2024 has reinvigorated approach to business & opened doors to new.”</p>
+								<div class="space32"></div>
+								<div class="name-area">
+									<div class="img1">
+										<img src="assets/img/all-images/testimonials/testimonial-img1.png" alt="" />
+									</div>
+									<div class="text">
+										<a href="speakers">Tristian Stubbs</a>
+										<div class="space6"></div>
+										<p>Founder, Payhawk</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial4-content">
+								<ul>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+								</ul>
+								<div class="space20"></div>
+								<p class="main">“The networking opportunities were equally transformative, allowing me to connect with like-minded professionals who share a passion for innovation and growth. Overall, Innovate 2024 has reinvigorated approach to business & opened doors to new.”</p>
+								<div class="space32"></div>
+								<div class="name-area">
+									<div class="img1">
+										<img src="assets/img/all-images/testimonials/testimonial-img1.png" alt="" />
+									</div>
+									<div class="text">
+										<a href="speakers">Tristian Stubbs</a>
+										<div class="space6"></div>
+										<p>Founder, Payhawk</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--===== TESTIMONIAL AREA ENDS =======-->
+
+		<!--===== TEAM AREA STARTS =======-->
+		<div class="team4-section-area sp1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="team-header space-margin60 heading6">
+							<h5 data-aos="fade-left" data-aos-duration="800">our 10+ event speakers</h5>
+							<div class="space16"></div>
+							<h2 class="text-anime-style-3">Business Breakthrough Team</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="team-slider-area4 owl-carousel">
+							<div class="team-widget-boxarea">
+								<div class="img1 image-anime">
+									<img src="assets/img/all-images/team/team-img2.png" alt="" />
+									<ul>
+										<li>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" class="m-0"><i class="fa-brands fa-youtube"></i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="space20"></div>
+								<div class="text-area">
+									<a href="speakers">Kendra Cremin</a>
+									<div class="space16"></div>
+									<p>Business Consultant</p>
+								</div>
+							</div>
+
+							<div class="team-widget-boxarea">
+								<div class="img1 image-anime">
+									<img src="assets/img/all-images/team/team-img1.png" alt="" />
+									<ul>
+										<li>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" class="m-0"><i class="fa-brands fa-youtube"></i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="space20"></div>
+								<div class="text-area">
+									<a href="speakers">Dennis Jacobson</a>
+									<div class="space16"></div>
+									<p>Finance Consultant</p>
+								</div>
+							</div>
+
+							<div class="team-widget-boxarea">
+								<div class="img1 image-anime">
+									<img src="assets/img/all-images/team/team-img3.png" alt="" />
+									<ul>
+										<li>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" class="m-0"><i class="fa-brands fa-youtube"></i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="space20"></div>
+								<div class="text-area">
+									<a href="speakers">Patricia Wilkinson</a>
+									<div class="space16"></div>
+									<p>HR Consultant</p>
+								</div>
+							</div>
+
+							<div class="team-widget-boxarea">
+								<div class="img1 image-anime">
+									<img src="assets/img/all-images/team/team-img2.png" alt="" />
+									<ul>
+										<li>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" class="m-0"><i class="fa-brands fa-youtube"></i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="space20"></div>
+								<div class="text-area">
+									<a href="speakers">Kendra Cremin</a>
+									<div class="space16"></div>
+									<p>Business Consultant</p>
+								</div>
+							</div>
+
+							<div class="team-widget-boxarea">
+								<div class="img1 image-anime">
+									<img src="assets/img/all-images/team/team-img1.png" alt="" />
+									<ul>
+										<li>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" class="m-0"><i class="fa-brands fa-youtube"></i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="space20"></div>
+								<div class="text-area">
+									<a href="speakers">Dennis Jacobson</a>
+									<div class="space16"></div>
+									<p>Finance Consultant</p>
+								</div>
+							</div>
+
+							<div class="team-widget-boxarea">
+								<div class="img1 image-anime">
+									<img src="assets/img/all-images/team/team-img3.png" alt="" />
+									<ul>
+										<li>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" class="m-0"><i class="fa-brands fa-youtube"></i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="space20"></div>
+								<div class="text-area">
+									<a href="speakers">Patricia Wilkinson</a>
+									<div class="space16"></div>
+									<p>HR Consultant</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===== TEAM AREA ENDS =======-->
+
+		<!--===== CONTACT AREA STARTS =======-->
+		<div class="contact4-section-area sp1">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1000">
+						<div class="contact4-boxarea">
+							<h3 class="text-anime-style-3">Leave A Message</h3>
+							<div class="space8"></div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<div class="input-area">
+										<input type="text" placeholder="Name" />
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6">
+									<div class="input-area">
+										<input type="text" placeholder="Phone" />
+									</div>
+								</div>
+
+								<div class="col-lg-12 col-md-6">
+									<div class="input-area">
+										<input type="email" placeholder="Email" />
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-6">
+									<div class="input-area">
+										<input type="text" placeholder="Subjects" />
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="input-area">
+										<textarea placeholder="Message"></textarea>
+									</div>
+								</div>
+
+								<div class="col-lg-12">
+									<div class="space24"></div>
+									<div class="input-area">
+										<button type="submit" class="vl-btn4">Send</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="contact4-header heading7">
+							<h5 data-aos="fade-left" data-aos-duration="800">How to reach</h5>
+							<div class="space18"></div>
+							<h2 class="text-anime-style-3">Connect with Our Team</h2>
+							<div class="space18"></div>
+							<p data-aos="fade-left" data-aos-duration="900">We’re here to help! you have any questions about Innovate 2024, need assistance with registration, or want to learn more about.</p>
+							<div class="space12"></div>
+							<div class="contact-author-box" data-aos="fade-left" data-aos-duration="1000">
+								
+								<div class="text">
+									<h4>Our Email</h4>
+									<div class="space10"></div>
+									<a href="mailto:eventify@gmail.com">info@ascentevents.in</a>
+								</div>
+							</div>
+
+							<div class="contact-author-box" data-aos="fade-left" data-aos-duration="1100">
+							
+								<div class="text">
+									<h4>Mobile</h4>
+									<div class="space10"></div>
+									<a href="tel:+919945596817">+919945596817 </a>
+									<a href="tel:+919611250303">+919611250303 </a>
+								</div>
+							</div>
+
+							<div class="contact-author-box" data-aos="fade-left" data-aos-duration="1200">
+								
+								<div class="text">
+									<h4>Address</h4>
+									<div class="space10"></div>
+									<a href="mailto:eventify@gmail.com">No 675, Sir M Vishweshwaraiah layout, 8th block furtherc, extension Dr G P Rajarathnam Road, Bengaluru-560091</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space60"></div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="img1 image-anime reveal">
+							<img src="assets/img/bg/05.jpg" alt="" />
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="img1 image-anime reveal">
+							<img src="assets/img/bg/04.jpg" alt="" />
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="mapouter">
+							<div class="gmap_canvas">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4611.855000051298!2d77.49017967507656!3d12.976300187339515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1so%20675%2C%20Sir%20M%20Vishweshwaraiah%20layout%2C%208th%20block%20further%2C%20extension%20Dr%20G%20P%20Rajarathnam%20Road%2C%20Bangalore-560091!5e1!3m2!1sen!2sin!4v1744878692188!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===== CONTACT AREA ENDS =======-->
+
+		<!--===== BLOG AREA STARTS =======-->
+	
+		<!--===== BLOG AREA ENDS =======-->
+
+		<!--===== CTA AREA STARTS =======-->
+		
+		<!--===== CTA AREA ENDS =======-->
+
+		<!--===== FOOTER AREA STARTS =======-->
+		<div class="footer4-sertion-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-logo-area">
+							<img src="assets/img/logo/logo.png" alt="" />
+							<div class="space16"></div>
+							<p>We are committed to creating a platform where business leaders, innovators, and professionals can come together to exchange ideas</p>
+							<div class="space24"></div>
+							<ul>
+								<li>
+									<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+								</li>
+								<li>
+									<a href="#" class="m-0"><i class="fa-brands fa-pinterest-p"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="link-content">
+							<h3>Quick Links</h3>
+							<ul>
+								<li><a href="about">About Us</a></li>
+								<li><a href="blog">Our Blogs</a></li>
+								<li><a href="event">Event Listing</a></li>
+								<li><a href="pricing-plan">Pricing Plan</a></li>
+								<li><a href="contact">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="link-content2">
+							<h3>Contact Us</h3>
+							<ul>
+								<li>
+									<a href="tel:+919945596817">+919945596817</a>
+								</li>
+								<li>
+									<a href="#">No 675, Sir M Vishweshwaraiah layout, 8th block furtherc, extension Dr G P Rajarathnam Road, Bengaluru-560091</a>
+								</li>
+								<li>
+									<a href="mailto:eventifyevent@gmail.com">info@ascentevents.in</a>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="footer-social-box">
+							<h3>Our Recent Event Gallery</h3>
+							<div class="space12"></div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-4">
+									<div class="img1">
+										<img src="assets/img/all-images/footer/footer-img1.png" alt="" />
+										<div class="icons">
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-4">
+									<div class="img1">
+										<img src="assets/img/all-images/footer/footer-img2.png" alt="" />
+										<div class="icons">
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-4">
+									<div class="img1">
+										<img src="assets/img/all-images/footer/footer-img3.png" alt="" />
+										<div class="icons">
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-4">
+									<div class="img1">
+										<img src="assets/img/all-images/footer/footer-img4.png" alt="" />
+										<div class="icons">
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-4">
+									<div class="img1">
+										<img src="assets/img/all-images/footer/footer-img5.png" alt="" />
+										<div class="icons">
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-4">
+									<div class="img1">
+										<img src="assets/img/all-images/footer/footer-img6.png" alt="" />
+										<div class="icons">
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space60"></div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="copyright">
+							<p>&copy; Copyright 2025 - Ascent Events. All Right Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			let currentSlide = 0;
+		
+			function showSlide(index) {
+			  const slider = document.getElementById("slider");
+			  const totalSlides = slider.children.length;
+			  currentSlide = (index + totalSlides) % totalSlides;
+			  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+			}
+		
+			function prevSlide() {
+			  showSlide(currentSlide - 1);
+			}
+		
+			function nextSlide() {
+			  showSlide(currentSlide + 1);
+			}
+		  </script>
+		<!--===== FOOTER AREA ENDS =======-->
+
+		<!--===== JS SCRIPT LINK =======-->
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<script src="assets/js/vendor/fontawesome.js"></script>
+		<script src="assets/js/vendor/aos.js"></script>
+		<script src="assets/js/vendor/jquery.appear.js"></script>
+		<script src="assets/js/vendor/jquery.odometer.min.js"></script>
+		<script src="assets/js/vendor/sidebar.js"></script>
+		<script src="assets/js/vendor/magnific-popup.js"></script>
+		<script src="assets/js/vendor/gsap.min.js"></script>
+		<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+		<script src="assets/js/vendor/Splitetext.js"></script>
+		<script src="assets/js/vendor/mobilemenu.js"></script>
+		<script src="assets/js/vendor/owlcarousel.min.js"></script>
+		<script src="assets/js/vendor/nice-select.js"></script>
+		<script src="assets/js/vendor/waypoints.js"></script>
+		<script src="assets/js/vendor/slick-slider.js"></script>
+		<script src="assets/js/vendor/circle-progress.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+
+<!-- Mirrored from eventify-html-demo.vercel.app/index4 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Apr 2025 06:50:11 GMT -->
+</html>
