@@ -25,6 +25,73 @@
 
 		<!--=====  JS SCRIPT LINK =======-->
 		<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+		<style>
+			/* General header background */
+.header-area {
+    background-color: #ffffff !important; /* white background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* subtle shadow for depth */
+    z-index: 999;
+}
+
+/* Make sure nav links stand out on white background */
+.header-area .main-menu ul li a {
+    color: #333333; /* dark text */
+    font-weight: 500;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.header-area .main-menu ul li a:hover,
+.header-area .main-menu ul li.active a {
+    color: #ff5a5f; /* or any primary hover color you like */
+}
+
+/* Dropdown Menu Styling */
+.header-area .main-menu ul li ul {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.header-area .main-menu ul li ul li a {
+    padding: 10px 20px;
+    color: #333333;
+}
+
+.header-area .main-menu ul li ul li a:hover {
+    background-color: #f7f7f7;
+    color: #ff5a5f;
+}
+
+/* Social Icons and Search */
+.header-area .btn-area a i,
+.header-area .btn-area a img {
+    color: #333333;
+    filter: brightness(0); /* makes icons visible on white */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .header-area {
+        background-color: #ffffff;
+    }
+
+    .main-menu {
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+    }
+
+    .main-menu ul li {
+        margin-bottom: 10px;
+    }
+}
+
+		</style>
 	</head>
 	<body class="homepage1-body">
 		<!-- Popup Section -->
@@ -61,7 +128,7 @@
 								<div class="main-menu">
 									<ul>
 										<li>
-											<a href="index4.html">Home </a>
+											<a href="index.html">Home </a>
 											
 										</li>
 										<li><a href="about.html">About</a></li>
@@ -72,7 +139,7 @@
 										<li>
 											<a href="#">Service <i class="fa-solid fa-angle-down"></i></a>
 						<ul class="dropdown-padding">
-							<li><a href="wedding.html">Wedding Planning</a></li>
+							<li><a href="wedding1.html">Wedding Planning</a></li>
 							<li><a href="corporate.html">Corporate Event Planning</a></li>
 							<li><a href="destination.html">Destination Weddings</a></li>
 							<li><a href="prewedding.html">Pre-Wedding Functions</a></li>
@@ -131,7 +198,7 @@
 				<div class="col-12">
 					<div class="mobile-header-elements">
 						<div class="mobile-logo">
-							<a href="index.html"><img src="assets/img/logo/logo1.png" alt="" /></a>
+							<a href="index.html"><img src="assets/img/logo/logo.png" alt="" /></a>
 						</div>
 						<div class="mobile-nav-icon dots-menu">
 							<i class="fa-solid fa-bars-staggered"></i>
@@ -164,13 +231,13 @@
 					<li>
 						<a href="#">Service <i class="fa-solid fa-angle-down"></i></a>
 						<ul class="dropdown-padding">
-							<li><a href="wedding.html">Wedding Planning</a></li>
+							<li><a href="wedding1.html">Wedding Planning</a></li>
 							<li><a href="corporate.html">Corporate Event Planning</a></li>
-							<li><a href="event.html">Destination Weddings</a></li>
-							<li><a href="event-schedule.html">Pre-Wedding Functions</a></li>
+							<li><a href="destination.html">Destination Weddings</a></li>
+							<li><a href="prewedding.html">Pre-Wedding Functions</a></li>
 							<li><a href="brithday.html">Birthday Parties</a></li>
-							<li><a href="Annuel.html">Corporate Annual day Events</a></li>
-							<li><a href="team.html">Team Building Activities</a></li>
+							<li><a href="corporate.html">Corporate Annual day Events</a></li>
+							<li><a href="team building.html">Team Building Activities</a></li>
 						</ul>
 					</li>
 					
@@ -240,7 +307,7 @@
 		<!--===== MOBILE HEADER STARTS =======-->
 
 		<!--===== HERO AREA STARTS =======-->
-		<div class="inner-page-header" style="background-image: url(assets/img/bg/header-bg5.png)">
+		<div class="inner-page-header" style="background-image: url(assets/img/bg/07.jpg)">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 m-auto">
@@ -262,7 +329,7 @@
 					<div class="col-lg-6">
 						<div class="about-imges">
 							<div class="img1 reveal image-anime">
-								<img src="assets/img/all-images/about/about-img1.png" alt="" />
+								<img src="assets/img/all-images/about/about.jpg" alt="" />
 							</div>
 							<div class="row">
 								<div class="col-lg-6 col-md-6">
@@ -278,20 +345,20 @@
 									</div>
 								</div>
 							</div>
-							<div class="about-btnarea">
+							<!-- <div class="about-btnarea">
 								<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none" class="keyframe5">
 									<path
 										d="M93.8771 2.53621C96.8982 1.28483 98.4087 0.659138 100 0.659138C101.591 0.659138 103.102 1.28483 106.123 2.5362L164.588 26.7531C167.609 28.0045 169.119 28.6302 170.245 29.7554C171.37 30.8806 171.995 32.3912 173.247 35.4123L197.464 93.8771C198.715 96.8982 199.341 98.4087 199.341 100C199.341 101.591 198.715 103.102 197.464 106.123L173.247 164.588C171.995 167.609 171.37 169.119 170.245 170.245C169.119 171.37 167.609 171.995 164.588 173.247L106.123 197.464C103.102 198.715 101.591 199.341 100 199.341C98.4087 199.341 96.8982 198.715 93.8771 197.464L35.4123 173.247C32.3912 171.995 30.8806 171.37 29.7554 170.245C28.6302 169.119 28.0045 167.609 26.7531 164.588L2.53621 106.123C1.28483 103.102 0.659138 101.591 0.659138 100C0.659138 98.4087 1.28483 96.8982 2.5362 93.8771L26.7531 35.4123C28.0045 32.3912 28.6302 30.8806 29.7554 29.7554C30.8806 28.6302 32.3912 28.0045 35.4123 26.7531L93.8771 2.53621Z"
 										fill="#1fa3a5"
 									/>
-								</svg>
-								<a href="pricing-plan">
+								</svg> -->
+								<!-- <a href="pricing-plan">
 									<span><i class="fa-solid fa-arrow-right"></i></span>
 									<br />
 									<div class="space12"></div>
-									Buy Ticket
-								</a>
-							</div>
+									Ascent Events
+								</a> -->
+							<!-- </div> -->
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -333,13 +400,13 @@
 		<!--===== OTHERS AREA STARTS =======-->
 		<div class="brands3-section-area sp2">
 			<div class="container">
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-lg-5 m-auto">
 						<div class="brand-header heading4 space-margin60 text-center">
 							<h3>Join 4,000+ companies already growing</h3>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="row">
 					<div class="col-lg-12" data-aos="zoom-in" data-aos-duration="800">
 						<div class="brand-slider-area owl-carousel">
